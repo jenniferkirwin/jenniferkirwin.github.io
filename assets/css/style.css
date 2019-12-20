@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai|Bebas+Neue|Courier+Prime|Fjalla+One|Jaldi|Open+Sans|Permanent+Marker|Raleway|Anton|Shadows+Into+Light&display=swap");
+@media (min-width: 768px) {
+  .navbar-brand.abs {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+}
+
+.navbar-brand, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+a.navbar-brand {
+  font-size: 36px;
+}
+
+h1 {
+  border-bottom: 5px solid #AF3B6E;
+  font-size: 54px;
+}
+/*# sourceMappingURL=style.css.map */
