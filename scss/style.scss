@@ -4,7 +4,10 @@
 
 $default-spacing: 25px;
 
-// SCSS
+/* ---------------------------------------- */
+/* General Styling */
+/* ---------------------------------------- */
+
 body {
     font-family: 'Lato', sans-serif;    
 }
@@ -28,16 +31,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
 }
 
+/* ---------------------------------------- */
+/* Highlight for Top of Page */
+/* ---------------------------------------- */
 %highlight-base {
-    // background: #bc4e9c;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to left, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to left, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    // background: #007991;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to left, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to left, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #FF512F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @extend %gradient-background;
     padding: $default-spacing*2 0;
 }
 
@@ -49,3 +47,38 @@ h1, h2, h3, h4, h5, h6 {
 .highlight-inner {
     @extend %highlight-base;
 }
+
+/* ---------------------------------------- */
+/* Skill Cards */
+/* ---------------------------------------- */
+%gradient-text {
+    @extend %gradient-background;        
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.skill-card {
+    margin-top: $default-spacing * 2;
+    text-align: center;
+}
+
+.skill-card {
+    i {
+        font-size: 72px;
+    }
+    p {        
+        font-family: 'Bebas Neue', cursive;
+        font-weight: bold;
+        font-size: 22px;
+        
+    }
+    &:hover i, &:hover p {
+        @extend %gradient-text;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* Portfolio Cards */
+/* ---------------------------------------- */
