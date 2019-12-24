@@ -93,3 +93,11 @@ div.skill-card {
 .portfolio-margin {
     margin: $default-spacing * 2 0 0 0;
 }
+
+.filter-show {
+    display: block;
+}
+
+.filter-hide {
+    display: none;
+}
