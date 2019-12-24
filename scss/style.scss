@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
 }
 
-.highlight-inner {
+.highlight-secondary {
     @extend %highlight-base;
 }
 
@@ -82,3 +82,14 @@ div.skill-card {
 /* ---------------------------------------- */
 /* Portfolio Cards */
 /* ---------------------------------------- */
+
+.card-title {
+    font-family: 'Bebas Neue', cursive;
+    i {
+        padding: 0 0 0 $default-spacing / 2;
+    }
+}
+
+.portfolio-margin {
+    margin: $default-spacing * 2 0 0 0;
+}
