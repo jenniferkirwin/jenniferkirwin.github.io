@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <script src="https://kit.fontawesome.com/b448568d58.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.min.css">
-    
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -22,36 +22,55 @@
 </head>
 
 <body>
-    <div id="nav-test"></div>
-    <script>
-        $(function(){
-            $("#nav-test").load("nav.html");
-        });
-    </script>
-<!-- -------------------------------------- -->
-<!-- One Container -->
-<!-- -------------------------------------- -->
-    <div class="highlight">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Jennifer Kirwin</a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="https://github.com/jenniferkirwin" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://github.com/jenniferkirwin" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+
+    <!-- -------------------------------------- -->
+    <!-- One Container -->
+    <!-- -------------------------------------- -->
+    <div class="highlight valign-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col s12 m4 l4">
+                <div class="col s12 m9 l9">
                     <h1>Hello, I'm Jen.</h1>
-                </div>
-                <div class="col s12 m8 l8">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                    <a class="waves-effect waves-light btn-large">Button</a>
+                    <p>I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.</p>
+                    <p><a class="waves-effect waves-light btn-large" href="portfolio.html">View My Portfolio</a></p>
                 </div>
             </div>
         </div>
     </div>
-<!-- -------------------------------------- -->
-<!-- One Container -->
-<!-- -------------------------------------- -->
+    <!-- -------------------------------------- -->
+    <!-- One Container -->
+    <!-- -------------------------------------- -->
     <div class="container valign-wrapper">
         <div class="row">
             <div class="col s12 m3 l3">
                 <h2>My Skillset</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
                 <p><a class="waves-effect waves-light btn-large">View Resume</a></p>
             </div>
             <div class="col s6 m2 l2">
@@ -84,36 +103,40 @@
             </div> -->
         </div>
     </div>
-<!-- -------------------------------------- -->
-<!-- One Container -->
-<!-- -------------------------------------- -->
-<div class="container">
-    <div class="row">
-        <div class="col s12 m3 l3">
-            <h2>My Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+    <!-- -------------------------------------- -->
+    <!-- One Container -->
+    <!-- -------------------------------------- -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m3 l3">
+                <h2>My Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="card portfolio-margin">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title <i
+                                class="fas fa-arrow-alt-circle-right"></i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-          <div class="col s12 m3 l3">
-            <div class="card portfolio-margin">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title <i class="fas fa-arrow-alt-circle-right"></i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
-                </div>
-              </div>
-          </div>
     </div>
-</div>
 
     <!-- Compiled and minified JavaScript -->
-    
+
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/scripts.js"></script>
