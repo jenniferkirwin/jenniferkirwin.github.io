@@ -18,6 +18,9 @@
 </head>
 
 <body>
+  <!-- -------------------------------------- -->
+  <!-- Navigation -->
+  <!-- -------------------------------------- -->
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper container">
@@ -25,9 +28,8 @@
         <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="https://github.com/jenniferkirwin" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
@@ -36,9 +38,8 @@
 
   <ul class="sidenav" id="mobile">
     <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="#">Resume</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
     <li><a href="https://github.com/jenniferkirwin" target="_blank"><i class="fab fa-github"></i></a></li>
   </ul>
   <!-- -------------------------------------- -->
@@ -51,7 +52,8 @@
           <h1>My Portfolio</h1>
         </div>
         <div class="col s12 m7 l7 offset-m1 offset-l1">
-          <p>A selection of website designs, GitHub Repositories, web components, UX layouts, custom graphics & more that I have developed and launched.</p>
+          <p>A selection of website designs, GitHub Repositories, web components, UX layouts, custom graphics & more
+            that I have developed and launched.</p>
         </div>
       </div>
     </div>
@@ -62,11 +64,12 @@
   <div class="container">
     <div class="row">
       <div class="col s12 m12 l12">
-        <p>Filter by project type</p>
-        <p>
+        <p class="portfolio-btn-container">
           <button class="active waves-effect waves-light btn-large" onclick="filterSelection('all')"> Show all</button>
+          <button class="waves-effect waves-light btn-large" onclick="filterSelection('css')"> HTML</button>
           <button class="waves-effect waves-light btn-large" onclick="filterSelection('css')"> CSS</button>
-          <button class="waves-effect waves-light btn-large" onclick="filterSelection('javascript')"> Javascript</button>
+          <button class="waves-effect waves-light btn-large" onclick="filterSelection('javascript')">
+            Javascript</button>
         </p>
       </div>
     </div>
@@ -84,14 +87,13 @@
               <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title <i
+              <span class="card-title activator grey-text text-darken-4">Project 1 <i
                   class="fas fa-arrow-alt-circle-right"></i></span>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i
-                  class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4">Project 1<i class="material-icons right">close</i></span>
               <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
             </div>
           </div>
         </div>
@@ -105,14 +107,13 @@
               <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title <i
+              <span class="card-title activator grey-text text-darken-4">Project 2 <i
                   class="fas fa-arrow-alt-circle-right"></i></span>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i
-                  class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4">Project 2<i class="material-icons right">close</i></span>
               <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
             </div>
           </div>
         </div>
@@ -126,14 +127,73 @@
               <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title <i
+              <span class="card-title activator grey-text text-darken-4">Project 3 <i
                   class="fas fa-arrow-alt-circle-right"></i></span>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i
-                  class="material-icons right">close</i></span>
+              <span class="card-title grey-text text-darken-4">Project 3<i class="material-icons right">close</i></span>
               <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              <p><a class="waves-effect waves-light btn-large">View Portfolio</a></p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End One Card -->
+      <!-- One Card -->
+      <div class="filterHide css">
+        <div class="col s12 m3 l4">
+          <div class="card portfolio-margin">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 4 <i
+                  class="fas fa-arrow-alt-circle-right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Project 4<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End One Card -->
+      <!-- One Card -->
+      <div class="filterHide css">
+        <div class="col s12 m3 l4">
+          <div class="card portfolio-margin">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 5 <i
+                  class="fas fa-arrow-alt-circle-right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Project 5<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End One Card -->
+      <!-- One Card -->
+      <div class="filterHide css">
+        <div class="col s12 m3 l4">
+          <div class="card portfolio-margin">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="https://dummyimage.com/400x300/a8a8a8/fff.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Project 6 <i
+                  class="fas fa-arrow-alt-circle-right"></i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Project 6<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <p><a class="waves-effect waves-light btn-large">View Project</a></p>
             </div>
           </div>
         </div>
@@ -142,6 +202,39 @@
 
     </div>
   </div>
+
+  <!-- -------------------------------------- -->
+  <!-- Footer -->
+  <!-- -------------------------------------- -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">Hello, I'm Jen.</h5>
+        </div>
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4">I am a marketer turned web developer, living in New Hampshire. I spend my
+            days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery
+            art.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="portfolio.html">Portfolio</a></li>
+            <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/jenniferkirwin" target="_blank"><i
+                  class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Built by Jennifer Kirwin, on Materialize
+      </div>
+    </div>
+  </footer>
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
