@@ -38,7 +38,8 @@ h1, h2 {
 @media only screen and (min-width: 601px) {
     img.float-right {
         float: right;
-        margin: $default-spacing 0 $default-spacing $default-spacing;
+        margin: 0 0 $default-spacing $default-spacing;
+        max-width: 250px;
     }
   }
 
