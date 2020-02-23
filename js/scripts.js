@@ -44,21 +44,37 @@ function removeClass(element, name) {
 // create overlay on popup
 // ---------------------------------------------------------------------------
 
-const portfolio = {
+const portfolio = [{
     "projectName":"Password Generator",
     "projectOver":"Creates a password with lowercase, uppercase, numeric, and special characters.",
-    "projectDesc":"xxx",
-    "url":"xxx",
-    "github":"xxx",
-    "img":"xxx"
-}
+    "projectDescr":"Creates a password with lowercase, uppercase, numeric, and special characters.",
+    "projectURL":"https://jenniferkirwin.github.io/password-generator2/",
+    "githubURL":"https://github.com/jenniferkirwin/password-generator2",
+    "imgSrc":"images/pass-gen.jpg",
+    "dataAttr":"0"
+}]
 
 $( document ).ready(function() {
 
     const $overlayDiv = $(`.overlay-div`);
     const $overlayX = $(`.overlay-x`);
+    const $portfolioCont = $(`.portfolio-card-container`);
+
+    const $overlayImg = $(`.overlay-img`);
+    const $overlayTitle = $(`.overlay-title`);
+    const $overlayDescr = $(`.overlay-descr`);
+    const $projectURL = $(`.project-url`);
+    const $githubURL = $(`.github-url`);
+
+// Hiding & showing portfolio div
 
     $(`.test`).on(`click`, function() {
+        const projectData =  portfolio[$(this).attr(`data-project`)];
+        $overlayTitle.text(projectData.projectName);
+        $overlayDescr.text(projectData.projectDescr);
+        $projectURL.attr(`href`, projectData.projectURL);
+        $githubURL.attr(`href`, projectData.githubURL);
+        $overlayImg.attr(`src`, projectData.imgSrc);
         $overlayDiv.removeClass(`fadeOutUp hidden-div`).addClass(`fadeInDown`);
     });
 
