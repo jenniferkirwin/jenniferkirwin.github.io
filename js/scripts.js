@@ -36,3 +36,33 @@ function removeClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
+
+// ---------------------------------------------------------------------------
+// Hide and Show Portfolio Overlay Div
+// things to do:
+// dynamically populate HTML
+// create overlay on popup
+// ---------------------------------------------------------------------------
+
+const portfolio = {
+    "projectName":"Password Generator",
+    "projectOver":"Creates a password with lowercase, uppercase, numeric, and special characters.",
+    "projectDesc":"xxx",
+    "url":"xxx",
+    "github":"xxx",
+    "img":"xxx"
+}
+
+$( document ).ready(function() {
+
+    const $overlayDiv = $(`.overlay-div`);
+    const $overlayX = $(`.overlay-x`);
+
+    $(`.test`).on(`click`, function() {
+        $overlayDiv.removeClass(`fadeOutUp hidden-div`).addClass(`fadeInDown`);
+    });
+
+    $overlayX.on(`click`, function() {
+        $overlayDiv.removeClass(`fadeOutUp`).addClass(`fadeOutUp`);
+    });
+});
