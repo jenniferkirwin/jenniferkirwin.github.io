@@ -174,7 +174,12 @@ div.skill-card {
 /* Portfolio Overlay Divs */
 /* ---------------------------------------- */
 
+.test {
+    cursor: pointer;     
+}
+
 .overlay-div {
+    padding: 35px;
     position: fixed;
     display: block;
     width: 100%;
@@ -185,6 +190,10 @@ div.skill-card {
     bottom: 0;
     background-color: #ffffff;
     z-index: 999;
+    h2 {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
 }
 
 .overlay-x {
