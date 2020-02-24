@@ -38,14 +38,13 @@ const portfolio = [
         "githubURL":"https://github.com/nwsanfor24/holiday-meal-planner",
         "imgSrc":"images/supereats.jpg",
         "builtWith":"html css javascript jquery"
-    }
+    },
 ]
 
 $( document ).ready(function() {
 
     const $overlayDiv = $(`.overlay-div`);
     const $overlayX = $(`.overlay-x`);
-    const $portfolioCont = $(`.portfolio-card-container`);
 
     const $overlayImg = $(`.overlay-img`);
     const $overlayTitle = $(`.overlay-title`);
