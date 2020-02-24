@@ -36,7 +36,7 @@ const portfolio = [
         "projectDescr":"An application to help you meal plan for any holiday. Developed as a group, with myself as team lead.",
         "projectURL":"https://nwsanfor24.github.io/holiday-meal-planner//",
         "githubURL":"https://github.com/nwsanfor24/holiday-meal-planner",
-        "imgSrc":"images/scheduler.jpg",
+        "imgSrc":"images/supereats.jpg",
         "builtWith":"html css javascript jquery"
     }
 ]
