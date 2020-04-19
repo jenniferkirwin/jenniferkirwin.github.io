@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap");
+.skill-card:hover i, .skill-card:hover p, .highlight-secondary, .highlight {
+  background: #FF206E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF206E, #ff5858);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF206E, #ff5858);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ---------------------------------------- */
+/* General Styling */
+/* ---------------------------------------- */
+body {
+  font-family: "Lato", sans-serif;
+  color: #2A2B2A;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", cursive;
+  position: relative;
+}
+h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+  content: " ";
+  display: block;
+  background-color: #FF206E;
+  height: 5px;
+  width: 25px;
+  position: absolute;
+  bottom: -15px;
+}
+
+h1, h2 {
+  margin-bottom: 37.5px;
+}
+
+.brand-logo {
+  font-family: "Bebas Neue", cursive;
+}
+
+@media only screen and (min-width: 601px) {
+  img.float-right {
+    float: right;
+    margin: 0 0 25px 25px;
+    max-width: 250px;
+  }
+}
+input[type=submit] {
+  color: #ffffff;
+}
+
+/* Apply this property to a .row to make all columns equal hights*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---------------------------------------- */
+/* Adjusting Container Width */
+/* ---------------------------------------- */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
+}
+/* ---------------------------------------- */
+/* Highlight for Top of Page */
+/* ---------------------------------------- */
+.highlight-secondary .btn-large, .highlight .btn-large {
+  background-color: #2A2B2A;
+}
+
+.highlight {
+  height: 100vh;
+}
+.highlight h1 {
+  margin-top: 0;
+}
+.highlight h1:after {
+  background-color: #2A2B2A;
+}
+
+.highlight-secondary {
+  padding: 50px 0;
+}
+.highlight-secondary h1:after {
+  background-color: #2A2B2A;
+}
+
+/* ---------------------------------------- */
+/* Skill Cards */
+/* ---------------------------------------- */
+.skill-card:hover i, .skill-card:hover p {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div.skill-card {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.skill-card i {
+  font-size: 72px;
+}
+.skill-card p {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  font-size: 22px;
+}
+/* ---------------------------------------- */
+/* Portfolio Cards */
+/* ---------------------------------------- */
+.portfolio-btn-container button {
+  margin: 25px 6.25px 0 0;
+}
+
+.card-title {
+  font-family: "Bebas Neue", cursive;
+}
+.card-title i {
+  padding: 0 0 0 12.5px;
+}
+
+.portfolio-margin {
+  margin: 50px 0 0 0;
+}
+
+.filterHide {
+  display: none;
+}
+
+.filterShow {
+  display: block;
+}
+
+/* ---------------------------------------- */
+/* Portfolio Overlay Divs */
+/* ---------------------------------------- */
+.test {
+  cursor: pointer;
+}
+
+.overlay-div {
+  padding: 35px;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.overlay-div h2 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.overlay-x {
+  position: fixed;
+  display: block;
+  top: 25px;
+  right: 25px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.hidden-div {
+  display: none;
+}
+
+/* ---------------------------------------- */
+/* Contact Page Links */
+/* ---------------------------------------- */
+.contact-div i {
+  padding-right: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */
