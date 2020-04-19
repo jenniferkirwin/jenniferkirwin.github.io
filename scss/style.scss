@@ -146,6 +146,10 @@ div.skill-card {
 /* Portfolio Cards */
 /* ---------------------------------------- */
 
+.card {
+  cursor: pointer;     
+}
+
 .portfolio-btn-container {
     button {
         margin: $default-spacing $default-spacing / 4 0 0;
@@ -173,10 +177,6 @@ div.skill-card {
 /* ---------------------------------------- */
 /* Portfolio Overlay Divs */
 /* ---------------------------------------- */
-
-.test {
-    cursor: pointer;     
-}
 
 .overlay-div {
     padding: 35px;
