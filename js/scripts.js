@@ -50,7 +50,7 @@ $(document).ready(function () {
 
   // Hiding & showing portfolio div
 
-  $(`.project-card`).on(`click`, function () {
+  $(document).on(`click`, `.project-card`, function () {
     console.log($(this).attr(`data-project`))
     const projectData = portfolio[$(this).attr(`data-project`)];
     $overlayTitle.text(projectData.projectName);
