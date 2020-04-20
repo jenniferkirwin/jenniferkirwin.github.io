@@ -13,6 +13,8 @@ $(document).ready(function () {
   const $projectURL = $(`.project-url`);
   const $githubURL = $(`.github-url`);
 
+  const portfolio = [];
+
   // ---------------------------------------------------------------------------
   // Handling Portfolio on Website
   // ---------------------------------------------------------------------------
@@ -22,6 +24,8 @@ $(document).ready(function () {
   $.getJSON("js/portfolio.json", function (data) {
 
     data.forEach(function (item, index) {
+
+      portfolio.push(item);
 
       $(`.portfolio-card-container`).append(
         `<div class="filterShow ${item.builtWith}">
