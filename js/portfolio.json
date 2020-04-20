@@ -1,5 +1,23 @@
 [
   {
+    "projectName":"Hamburger Builder",
+    "projectOver":"This application runs in node.js, using Sequelize to create and update a mySQL database, Express as a server, and is deployed on Heroku.",
+    "projectDescr":"This application runs in node.js, using Sequelize to create and update a mySQL database, Express as a server, and is deployed on Heroku.",
+    "projectURL":"https://glacial-castle-26522.herokuapp.com/",
+    "githubURL":"https://github.com/jenniferkirwin/hamburger-builder",
+    "imgSrc":"images/hamburger.jpg",
+    "builtWith":"html css"
+  },
+  {
+    "projectName":"Note Taker",
+    "projectOver":"A note taking application utilizing node.js, sass, express.js and is deployed on Heroku",
+    "projectDescr":"A note taking application utilizing node.js, sass, express.js and is deployed on Heroku",
+    "projectURL":"https://immense-beyond-55172.herokuapp.com/note",
+    "githubURL":"https://github.com/jenniferkirwin/note-taker",
+    "imgSrc":"images/note-taker.jpg",
+    "builtWith":"html css"
+  },
+  {
       "projectName":"Password Generator",
       "projectOver":"Creates a password with lowercase, uppercase, numeric, and special characters.",
       "projectDescr":"Creates a password with lowercase, uppercase, numeric, and special characters.",
@@ -34,5 +52,14 @@
       "githubURL":"https://github.com/nwsanfor24/holiday-meal-planner",
       "imgSrc":"images/supereats.jpg",
       "builtWith":"html css javascript jquery"
+  },
+  {
+    "projectName":"Give Me a Break",
+    "projectOver":"A positive distraction app that allows the user to discover relaxing music, inspiring artwork, and mindful meditation sounds to brighten their day.",
+    "projectDescr":"A positive distraction app that allows the user to discover relaxing music, inspiring artwork, and mindful meditation sounds to brighten their day.",
+    "projectURL":"https://nameless-earth-27554.herokuapp.com/",
+    "githubURL":"https://github.com/nwsanfor24/project-2",
+    "imgSrc":"images/give-me-a-break.jpg",
+    "builtWith":"html css"
   }
 ]
