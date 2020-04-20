@@ -27,6 +27,8 @@ $(document).ready(function () {
 
       portfolio.push(item);
 
+      console.log(portfolio);
+
       $(`.portfolio-card-container`).append(
         `<div class="filterShow ${item.builtWith}">
             <div class="col s12 m3 l4">
