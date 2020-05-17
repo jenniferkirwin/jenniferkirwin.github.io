@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
+      backgroundColor: '#2A2B2A',
+      color: '#ffffff',
+      marginTop: '25px',
+      padding: '35px 0px',
     },
   }),
 );
@@ -31,7 +35,7 @@ export default function Footer() {
 
   return (
     <div className={classes.root}>
-      <Container maxWidth={false}>
+      <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} >
             <Typography variant="h5" align="left">

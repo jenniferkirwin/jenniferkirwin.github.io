@@ -17,6 +17,7 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Container from '@material-ui/core/Container';
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,11 +35,17 @@ const useStyles = makeStyles((theme: Theme) =>
 
     rightToolbar: {
       marginLeft: 'auto',
+      marginRight: '-25px',
     },
 
     fullList: {
       width: 'auto',
     },
+
+    title: {
+      marginLeft: '-25px',
+      padding: '15px 0px',
+    }
 
   }),
 );
@@ -79,24 +86,26 @@ export default function Navbar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
+      <Container>
         <Toolbar>
-          <Typography variant="h6">
-            Jennifer Kirwin
-          </Typography>
-          <section className={classes.rightToolbar}>
-            <Hidden smDown>
-              <Button color="inherit">Portfolio</Button>
-              <Button color="inherit">About</Button>
-              <Button color="inherit">Contact</Button>
-              <Button color="inherit"><FontAwesomeIcon icon={faGithub} /></Button>
-            </Hidden>
-            <Hidden mdUp>
-              <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('bottom', true)}>
-                <MenuIcon></MenuIcon>
-              </IconButton>
-            </Hidden>
-          </section>
-        </Toolbar>
+            <Typography variant="h4" className={classes.title}>
+              Jennifer Kirwin
+            </Typography>
+            <section className={classes.rightToolbar}>
+              <Hidden smDown>
+                <Button color="inherit">Portfolio</Button>
+                <Button color="inherit">About</Button>
+                <Button color="inherit">Contact</Button>
+                <Button color="inherit"><FontAwesomeIcon icon={faGithub} /></Button>
+              </Hidden>
+              <Hidden mdUp>
+                <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('bottom', true)}>
+                  <MenuIcon></MenuIcon>
+                </IconButton>
+              </Hidden>
+            </section>
+          </Toolbar>
+      </Container>
       </AppBar>
 
       <Drawer anchor={'bottom'} open={state['bottom']} onClose={toggleDrawer('bottom', false)}>

@@ -10,6 +10,10 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
+// FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 // Begin Application
 // -------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------
@@ -17,39 +21,35 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      background: 'linear-gradient(to right, #FF206E, #ff5858)',
-      marginBottom: '25px',
-    },
-    customHeader: {
-      minHeight: '350px',
-      padding: '55px 0px'   
+
     },
   }),
 );
 
-export default function Header() {
+export default function Footer() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Container>
-        <Grid
-          container
-          spacing={3}
-          direction="row"
-          justify="flex-start"
-          alignItems="center"
-          className={classes.customHeader}
-        >
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h2" component="h2">
+        <Grid container spacing={3}>
+          <Grid item xs={12} >
+            <Typography variant="h5" align="left">
               Hello, I'm Jen.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={8}>
-            <Typography variant="h6">
+          <Grid item xs={12} sm={6}>
+            <Typography variant="body1" align="left">
               I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.
             </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <ul>
+              <li>Portfolio</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li><FontAwesomeIcon icon={faGithub} /></li>
+            </ul>
           </Grid>
         </Grid>
       </Container>
