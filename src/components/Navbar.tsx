@@ -3,6 +3,7 @@
 // -------------------------------------------------------------------------------------------
 
 import React from 'react';
+import { Link } from "react-router-dom";
 
 // Material UI
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
@@ -93,10 +94,10 @@ export default function Navbar() {
             </Typography>
             <section className={classes.rightToolbar}>
               <Hidden smDown>
-                <Button color="inherit">Portfolio</Button>
-                <Button color="inherit">About</Button>
-                <Button color="inherit">Contact</Button>
-                <Button color="inherit"><FontAwesomeIcon icon={faGithub} /></Button>
+                <Button color="inherit" href="/portfolio">Portfolio</Button>
+                <Button color="inherit" href="/about">About</Button>
+                <Button color="inherit" href="/contact">Contact</Button>
+                <Button color="inherit" href="https://github.com/jenniferkirwin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></Button>
               </Hidden>
               <Hidden mdUp>
                 <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('bottom', true)}>
