@@ -14,6 +14,17 @@ import Typography from '@material-ui/core/Typography';
 // -------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------
 
+interface BannerProps {
+  page: string;
+  title: string;
+  content: string;
+  fullScreen: boolean;
+}
+
+interface BannerTest {
+  mycontent: string;
+}
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -27,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function Header() {
+export default function Banner({mycontent}:BannerTest) {
   const classes = useStyles();
 
   return (

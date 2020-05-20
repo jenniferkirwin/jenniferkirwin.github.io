@@ -9,11 +9,25 @@ import theme from './theme';
 // importing components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import Banner from './components/Banner';
 import Cards from './components/Cards';
 import About from './pages/About';
 
+// Importing header data for props
+
+
+
 function App() {
+
+  // const testBanner = {
+  //   page: "test page",
+  //   title: "test title",
+  //   content: "test content",
+  //   fullScreen: true
+  // }
+
+  const test = "test";
+
   return (
       <Router>
 
@@ -25,15 +39,14 @@ function App() {
 
           <Switch>
             <Route exact path={['/']}>
-              <Header></Header>
+              <Banner mycontent={test}></Banner>
               <Cards></Cards>
             </Route>
             <Route exact path={['/about']}>
-              <Header></Header>
               <About></About>
             </Route>
           </Switch>
-          
+
           <Footer></Footer>
 
         </ThemeProvider>
