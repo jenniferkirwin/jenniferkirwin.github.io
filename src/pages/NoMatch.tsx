@@ -9,10 +9,24 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
-// interface
-
-import BannerProps from '../interfaces/BannerProps';
+// FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faHtml5, 
+  faSass, 
+  faJs, 
+  faNodeJs, 
+  faReact, 
+  faAngular,
+  faBootstrap,
+  faAdobe 
+} from '@fortawesome/free-brands-svg-icons';
+import { 
+  faDatabase, 
+  faCheck,
+  faAd } from '@fortawesome/free-solid-svg-icons';
 
 // Begin Application
 // -------------------------------------------------------------------------------------------
@@ -21,38 +35,31 @@ import BannerProps from '../interfaces/BannerProps';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      background: 'linear-gradient(to right, #FF206E, #ff5858)',
-      marginBottom: '25px',
+
     },
-    customHeader: {
-      minHeight: '350px',
-      padding: '55px 0px'   
+
+    Icons: {
+      marginRight: '7px',
     },
+
+    UnstyledList: {
+      listStyleType: 'none',
+      padding: '25px 0 0',
+
+    }
   }),
 );
 
-export default function Banner({title, content}:BannerProps) {
+export default function NoMatch() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Container>
-        <Grid
-          container
-          spacing={3}
-          direction="row"
-          justify="flex-start"
-          alignItems="center"
-          className={classes.customHeader}
-        >
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h2" component="h2">
-              {title}
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={8}>
-            <Typography variant="h6">
-              {content}
+        <Grid container spacing={3}>
+          <Grid item xs={12} >
+            <Typography variant="h3">
+              
             </Typography>
           </Grid>
         </Grid>

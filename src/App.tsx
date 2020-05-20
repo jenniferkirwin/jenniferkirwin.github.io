@@ -12,21 +12,20 @@ import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Cards from './components/Cards';
 import About from './pages/About';
+import NoMatch from './pages/NoMatch';
 
 // Importing header data for props
-
-
+import headers from './data/headers'
+// import BannerProps from './interfaces/BannerProps';
 
 function App() {
 
-  // const testBanner = {
-  //   page: "test page",
-  //   title: "test title",
-  //   content: "test content",
-  //   fullScreen: true
-  // }
-
-  const test = "test";
+  // const mappedRoutes = headers.map(({route, page, title, content, fullscreen}:BannerProps) => {
+  //   <Route exact path={route}>
+  //     <Banner {...headers[0]}></Banner>
+  //     <{...page}/>
+  //   </Route>
+  // })
 
   return (
       <Router>
@@ -38,12 +37,15 @@ function App() {
           <Navbar></Navbar>
 
           <Switch>
-            <Route exact path={['/']}>
-              <Banner mycontent={test}></Banner>
-              <Cards></Cards>
+            <Route exact path={'/'}>
+              <Banner {...headers[0]}></Banner>
             </Route>
-            <Route exact path={['/about']}>
-              <About></About>
+            <Route
+              path='/about'
+              render={(props) => <About {...headers[1]} />}
+            />
+            <Route>
+              <NoMatch />
             </Route>
           </Switch>
 
