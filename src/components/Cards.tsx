@@ -34,6 +34,14 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+function importAll(r:any) {
+  let images = {};
+  r.keys().map((item:any, index:any):any => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../assets/images', false, /\.(png|jpe?g|svg)$/));
+
 export default function Cards() {
   const classes = useStyles();
 
@@ -50,8 +58,9 @@ export default function Cards() {
                     <CardMedia
                       component="img"
                       alt={projectName}
-                      image="https://jenniferkirwin.github.io/images/hamburger.jpg"
+
                       title={projectName}
+                      src="../assets/images/hamburger.jpg"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">

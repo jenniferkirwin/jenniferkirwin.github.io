@@ -55,12 +55,18 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function About(props:BannerProps) {
+const bannerText:BannerProps = {
+  "title": "About Me",
+  "content": "I am a digital marketer turned web developer, living in Manchester, New Hampshire, creating and developing websites and applications with HTML, CSS, JavaScript, and more.",
+  "fullScreen": false
+}
+
+export default function About() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Banner {...props}></Banner>
+      <Banner {...bannerText}></Banner>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} >
