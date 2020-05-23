@@ -1,13 +1,6 @@
-interface Portfolio {
-  projectName: string;
-  projectOver: string;
-  projectDescr: string;
-  projectURL: string;
-  githubURL: string;
-  imgSrc: string;
-}
+import PortfolioProps from '../interfaces/PortfolioProps';
 
-const portfolio: Portfolio[] = [
+const portfolio: PortfolioProps[] = [
   {
     "projectName":"Hamburger Builder",
     "projectOver":"This application runs in node.js, using Sequelize to create and update a mySQL database, Express as a server, and is deployed on Heroku.",

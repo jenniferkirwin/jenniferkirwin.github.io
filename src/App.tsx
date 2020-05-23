@@ -9,7 +9,6 @@ import theme from './theme';
 // importing components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Banner from './components/Banner';
 
 // importing pages
 import Home from './pages/Home';
@@ -17,10 +16,6 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
-
-// Importing header data for props
-import headers from './data/headers'
-import BannerProps from './interfaces/BannerProps';
 
 function App() {
   // Try this for route mapping: https://alligator.io/react/react-router-map-to-routes/

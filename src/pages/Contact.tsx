@@ -76,9 +76,6 @@ export default function Contact() {
             <Typography variant="body1">
               A selection of website designs, GitHub Repositories, web components, UX layouts, & more that I have developed and launched.
             </Typography>
-            <Button variant="contained" size="large" color="secondary" href="/portfolio">
-              View Portfolio
-            </Button>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h3">
@@ -91,17 +88,6 @@ export default function Contact() {
               Learn More
             </Button>
           </Grid> 
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h3">
-              Contact Me
-            </Typography>
-            <Typography variant="body1">
-            Want to work with me? Send me a note, I would love to hear from you!
-            </Typography>
-            <Button variant="contained" size="large" color="secondary" href="/contact">
-              Contact Me
-            </Button>
-          </Grid>
         </Grid>
       </Container>
 

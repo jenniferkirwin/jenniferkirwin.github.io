@@ -51,22 +51,22 @@ export default function Cards() {
         <Grid container spacing={3}>
 
           {portfolio.length ? (
-            portfolio.map(({projectName}) => (
+            portfolio.map((portfolio) => (
               <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.root}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      alt={projectName}
+                      alt={portfolio.projectName}
 
-                      title={projectName}
+                      title={portfolio.projectName}
                       src="https://jenniferkirwin.github.io/images/hamburger.jpg"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
-                        {projectName} <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                        {portfolio.projectName} <FontAwesomeIcon icon={faArrowAltCircleRight} />
                       </Typography>
-                      <CardModal />
+                      <CardModal {...portfolio} />
                     </CardContent>
                   </CardActionArea>
                 </Card>
