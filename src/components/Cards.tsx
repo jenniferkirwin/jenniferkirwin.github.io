@@ -14,8 +14,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
-// Portfolio
+// Portfolio & Components
 import portfolio from '../data/portfolio';
+import CardModal from '../components/CardModal';
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -59,12 +60,13 @@ export default function Cards() {
                       alt={projectName}
 
                       title={projectName}
-                      src="../assets/images/hamburger.jpg"
+                      src="https://jenniferkirwin.github.io/images/hamburger.jpg"
                     />
                     <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {projectName} <FontAwesomeIcon icon={faArrowAltCircleRight} />
-                    </Typography>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {projectName} <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                      </Typography>
+                      <CardModal />
                     </CardContent>
                   </CardActionArea>
                 </Card>
