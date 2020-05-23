@@ -81,7 +81,7 @@ export default function About() {
             <Typography variant="body1">
             To help jumpstart myself, I am taking a class through the University of New Hampshire to better understand back-end development and update my portfolio. <a href="portfolio.html">Check out my latest projects here!</a> Want to chat? <a href="contact.html">Feel free to contact me at any time!</a> Like art? <a href="https://www.jenniferlamontagne.com/" target="_blank" rel="noopener noreferrer">Check out my embroideries at www.jenniferlamontagne.com.</a>
             </Typography>
-            <Button variant="contained" size="large" color="secondary">
+            <Button variant="contained" size="large" color="secondary" href="#" target="_blank">
               Download Resume
             </Button>
           </Grid>

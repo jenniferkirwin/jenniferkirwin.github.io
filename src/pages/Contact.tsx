@@ -56,12 +56,12 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const bannerText:BannerProps = {
-  "title": "Uh Oh...",
-  "content": "That page doesn't exist here! Instead, check out my portfolio or send me a message.",
-  "fullScreen": false
+  'title': 'Contact Me',
+  'content': 'Want to work with me? Send me a note, I would love to hear from you!',
+  'fullScreen': false
 }
 
-export default function NoMatch() {
+export default function Contact() {
   const classes = useStyles();
 
   return (

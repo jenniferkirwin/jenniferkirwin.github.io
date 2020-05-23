@@ -56,12 +56,12 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const bannerText:BannerProps = {
-  "title": "Uh Oh...",
-  "content": "That page doesn't exist here! Instead, check out my portfolio or send me a message.",
-  "fullScreen": false
+  'title': 'Hello, I\'m Jen.',
+  'content': 'I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.',
+  'fullScreen': true
 }
 
-export default function NoMatch() {
+export default function Home() {
   const classes = useStyles();
 
   return (

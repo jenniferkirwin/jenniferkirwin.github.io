@@ -86,7 +86,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
       <Container>
         <Toolbar>
             <Typography variant="h4" className={classes.title}>
@@ -97,7 +97,7 @@ export default function Navbar() {
                 <Button color="inherit" href="/portfolio">Portfolio</Button>
                 <Button color="inherit" href="/about">About</Button>
                 <Button color="inherit" href="/contact">Contact</Button>
-                <Button color="inherit" href="https://github.com/jenniferkirwin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></Button>
+                <Button color="inherit" href="https://github.com/jenniferkirwin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="2x" /></Button>
               </Hidden>
               <Hidden mdUp>
                 <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('bottom', true)}>

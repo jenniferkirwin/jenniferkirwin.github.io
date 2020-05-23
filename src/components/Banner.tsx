@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       background: 'linear-gradient(to right, #FF206E, #ff5858)',
-      marginBottom: '25px',
+      margin: '35px 0px 25px',
     },
     customHeader: {
       minHeight: '350px',

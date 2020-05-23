@@ -42,12 +42,18 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function About(props:BannerProps) {
+const bannerText:BannerProps =   {
+  "title": "My Portfolio",
+  "content": "A selection of website designs, GitHub Repositories, web components, UX layouts, & more that I have developed and launched.",
+  "fullScreen": false
+}
+
+export default function Portfolio() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Banner {...props}></Banner>
+      <Banner {...bannerText}></Banner>
       <Cards></Cards>
 
     </div>

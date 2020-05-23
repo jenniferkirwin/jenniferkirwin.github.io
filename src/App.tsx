@@ -12,8 +12,10 @@ import Footer from './components/Footer';
 import Banner from './components/Banner';
 
 // importing pages
+import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
 
 // Importing header data for props
@@ -32,20 +34,25 @@ function App() {
           <Navbar></Navbar>
 
           <Switch>
-            <Route exact path={'/'}>
-              <Banner {...headers[0]}></Banner>
-            </Route>
+            <Route
+              exact path={'/'}
+              render={() => <Home/>}
+            />
             <Route
               path='/about'
               render={() => <About/>}
             />
             <Route
               path='/portfolio'
-              render={(props) => <Portfolio {...headers[1]} />}
+              render={() => <Portfolio />}
             />
-            <Route>
-              <NoMatch />
-            </Route>
+            <Route
+              path='/contact'
+              render={() => <Contact />}
+            />
+            <Route
+              render={() => <NoMatch />}
+            />
           </Switch>
 
           <Footer></Footer>

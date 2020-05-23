@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact } from '@fortawesome/free-brands-svg-icons';
 
 // Begin Application
 // -------------------------------------------------------------------------------------------
@@ -24,8 +24,12 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       backgroundColor: '#2A2B2A',
       color: '#ffffff',
-      marginTop: '25px',
       padding: '35px 0px',
+      marginTop: 'calc(5% + 25px)',
+      bottom: 0,
+    },
+    Icons: {
+      marginRight: '7px',
     },
   }),
 );
@@ -42,18 +46,23 @@ export default function Footer() {
               Hello, I'm Jen.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={7}>
             <Typography variant="body1" align="left">
               I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={5}>
             <ul>
               <li>Portfolio</li>
               <li>About</li>
               <li>Contact</li>
               <li><FontAwesomeIcon icon={faGithub} /></li>
             </ul>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="body2">
+              <FontAwesomeIcon icon={faReact} className={classes.Icons} size="lg" />Built by me with React &amp; MaterialUi.
+            </Typography>
           </Grid>
         </Grid>
       </Container>
