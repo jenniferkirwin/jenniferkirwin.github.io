@@ -22,6 +22,8 @@ import CardModal from '../components/CardModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 
+// Importing images
+
 // Begin Application
 // -------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------
@@ -60,7 +62,7 @@ export default function Cards() {
                       alt={portfolio.projectName}
 
                       title={portfolio.projectName}
-                      src="https://jenniferkirwin.github.io/images/hamburger.jpg"
+                      src={portfolio.imgSrc}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">

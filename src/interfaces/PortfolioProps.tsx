@@ -5,4 +5,5 @@ export default interface PortfolioProps {
   projectURL: string;
   githubURL: string;
   imgSrc: string;
+  filePath: string;
 }
