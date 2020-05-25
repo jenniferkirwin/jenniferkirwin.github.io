@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const bannerText:BannerProps = {
   'title': 'Hello, I\'m Jen.',
-  'content': 'I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.',
+  'content': 'I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, JavaScript, NodeJS, and more. In my spare time you can find me making embroidery art.',
   'fullScreen': true
 }
 
@@ -74,7 +74,7 @@ export default function Home() {
               Portfolio
             </Typography>
             <Typography variant="body1">
-              A selection of website designs, GitHub Repositories, web components, UX layouts, & more that I have developed and launched.
+              A selection of website designs, GitHub Repositories, web components, UX layouts, &amp; more that I have developed and launched.
             </Typography>
             <Button variant="contained" size="large" color="secondary" href="/portfolio">
               View Portfolio
