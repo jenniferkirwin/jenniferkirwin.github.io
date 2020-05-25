@@ -8,12 +8,16 @@ import React from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+import Slide from '@material-ui/core/Slide';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Close from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
+
+// interface
+
+import PortfolioProps from '../interfaces/PortfolioProps';
 
 // Begin Application
 // -------------------------------------------------------------------------------------------
@@ -47,10 +51,13 @@ const useStyles = makeStyles((theme: Theme) =>
     btnContainer: {
       marginBottom: '25px',
     },
+    responsiveImg: {
+      maxWidth: '100%',
+    }
   }),
 );
 
-export default function CardModal() {
+export default function CardModal({projectName, projectOver, projectDescr, projectURL, githubURL, imgSrc}:PortfolioProps) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -79,39 +86,40 @@ export default function CardModal() {
           timeout: 500,
         }}
       >
-        <Fade in={open}>
+        <Slide in={open} direction="up">
           <div className={classes.overlayDiv}>
-            <Close className={classes.icon} />
             
+            <Button size="large" className={classes.icon} onClick={handleClose}>
+              <Close/>
+            </Button>
+
             <Container>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} >
                   <Typography variant="h3">
-                    My Background
+                    {projectName}
                   </Typography>
                   <Typography variant="body1">
-                    asdfadsf asdfadsf asdfsdafa asdf adsfds d asdfadfa asdfasdfa asdfadsf
+                    {projectOver}
                   </Typography>
                   <div className={classes.btnContainer}>
-                    <Button variant="contained" size="large" color="secondary" href="#" target="_blank">
+                    <Button variant="contained" size="large" color="secondary" href={projectURL} target="_blank">
                       View Project
                     </Button>
                   </div>
                   <div>
-                    <Button variant="contained" size="large" color="secondary" href="#" target="_blank">
+                    <Button variant="contained" size="large" color="secondary" href={githubURL} target="_blank">
                       View Github Repository
                     </Button>
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} >
-                  <Typography variant="h3">
-                    My Background
-                  </Typography>
+                  <img src={imgSrc} alt={projectName} className={classes.responsiveImg}/>
                 </Grid>
               </Grid>
             </Container>
           </div>
-        </Fade>
+        </Slide>
       </Modal>
     </div>
   );

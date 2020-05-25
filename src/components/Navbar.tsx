@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------------------------
 
 import React from 'react';
-import { Link } from "react-router-dom";
+import Link from '@material-ui/core/Link';
 
 // Material UI
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
@@ -17,12 +17,10 @@ import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import Container from '@material-ui/core/Container';
 
-// FontAwesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// Import Menu Items
+import menu from '../data/menu';
 
 // Styles
 // -------------------------------------------------------------------------------------------
@@ -46,7 +44,7 @@ const useStyles = makeStyles((theme: Theme) =>
     title: {
       marginLeft: '-25px',
       padding: '15px 0px',
-    }
+    },
 
   }),
 );
@@ -54,8 +52,6 @@ const useStyles = makeStyles((theme: Theme) =>
 // Functions for Drawer Menu
 // -------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------
-
-const menuItems = ['Portfolio', 'About', 'Contact', 'Github'];
 
 type Anchor = 'bottom';
 
@@ -87,17 +83,18 @@ export default function Navbar() {
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
-      <Container>
-        <Toolbar>
+        <Container>
+          <Toolbar>
             <Typography variant="h4" className={classes.title}>
-              Jennifer Kirwin
+              <Link href="/" color="inherit" underline="none">
+                Jennifer Kirwin
+              </Link>
             </Typography>
             <section className={classes.rightToolbar}>
               <Hidden smDown>
-                <Button color="inherit" href="/portfolio">Portfolio</Button>
-                <Button color="inherit" href="/about">About</Button>
-                <Button color="inherit" href="/contact">Contact</Button>
-                <Button color="inherit" href="https://github.com/jenniferkirwin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="2x" /></Button>
+                {menu.map(({ page, url }) => (
+                  <Button color="inherit" href={url}>{page}</Button>
+                ))}
               </Hidden>
               <Hidden mdUp>
                 <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer('bottom', true)}>
@@ -106,7 +103,7 @@ export default function Navbar() {
               </Hidden>
             </section>
           </Toolbar>
-      </Container>
+        </Container>
       </AppBar>
 
       <Drawer anchor={'bottom'} open={state['bottom']} onClose={toggleDrawer('bottom', false)}>
@@ -117,10 +114,12 @@ export default function Navbar() {
           onKeyDown={toggleDrawer('bottom', false)}
         >
           <List>
-            {menuItems.map((text) => (
-              <ListItem button key={text}>
-                <ListItemText primary={text} />
-              </ListItem>
+            {menu.map(({ page, url }) => (
+
+              <Link href={ url } color="inherit" underline="none">
+                <ListItem button key={ page }>{ page }</ListItem>
+              </Link>
+
             ))}
           </List>
         </div>

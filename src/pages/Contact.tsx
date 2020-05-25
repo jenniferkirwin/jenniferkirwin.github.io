@@ -9,7 +9,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 
 // Banner and Interface
 
@@ -19,19 +19,14 @@ import BannerProps from '../interfaces/BannerProps';
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faHtml5, 
-  faSass, 
-  faJs, 
-  faNodeJs, 
-  faReact, 
-  faAngular,
-  faBootstrap,
-  faAdobe 
+  faGithub,
+  faLinkedin,
+  faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import { 
-  faDatabase, 
-  faCheck,
-  faAd } from '@fortawesome/free-solid-svg-icons';
+  faEnvelope,
+  faGlobe
+ } from '@fortawesome/free-solid-svg-icons';
 
 // Begin Application
 // -------------------------------------------------------------------------------------------
@@ -68,40 +63,38 @@ export default function Contact() {
     <div className={classes.root}>
       <Banner {...bannerText}></Banner>
       <Container>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={4}>
+        <Grid container spacing={6}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h3">
-              Portfolio
+              Developer
             </Typography>
             <Typography variant="body1">
-              A selection of website designs, GitHub Repositories, web components, UX layouts, & more that I have developed and launched.
+              I can't wait to hear from you! Send me an email or check out my latest projects...
             </Typography>
-            <Button variant="contained" size="large" color="secondary" href="/portfolio">
-              View Portfolio
-            </Button>
+            <Typography variant="body1">
+              <Link href="mailto:jennifer.m.kirwin@gmail.com" color="secondary"><FontAwesomeIcon icon={faEnvelope} className={classes.Icons} size="lg"/> jennifer.m.kirwin@gmail.com</Link>
+            </Typography>
+            <Typography variant="body1">
+              <Link href="https://github.com/jenniferkirwin" target="_blank" rel="noopener noreferrer" color="secondary"><FontAwesomeIcon icon={faGithub} className={classes.Icons} size="lg"/> github.com/jenniferkirwin</Link>
+            </Typography>
+            <Typography variant="body1">
+              <Link href="https://www.linkedin.com/in/jennifer-lamontagne-kirwin-17b13646/" target="_blank" rel="noopener noreferrer" color="secondary"><FontAwesomeIcon icon={faLinkedin} className={classes.Icons} size="lg"/> linkedin.com/in/jennifer-lamontagne-kirwin-17b13646/</Link>
+            </Typography>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <Typography variant="h3">
-              About Me
+              Artist
             </Typography>
             <Typography variant="body1">
-              I am a digital marketer turned web developer, living in Manchester, New Hampshire, creating and developing websites and applications with HTML, CSS, JavaScript, and more.
+              Like art? Check out my latest exhibitions, workshops, and creations here...
             </Typography>
-            <Button variant="contained" size="large" color="secondary" href="/about">
-              Learn More
-            </Button>
+            <Typography variant="body1">
+              <Link href="https://www.jenniferlamontagne.com/" target="_blank" rel="noopener noreferrer" color="secondary"><FontAwesomeIcon icon={faGlobe} className={classes.Icons} size="lg"/> jenniferlamontagne.com</Link>
+            </Typography>
+            <Typography variant="body1">
+              <Link href="https://www.instagram.com/lamont.artist/" target="_blank" rel="noopener noreferrer" color="secondary"><FontAwesomeIcon icon={faInstagram} className={classes.Icons} size="lg"/> instagram.com/lamont.artist/</Link>
+            </Typography>
           </Grid> 
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h3">
-              Contact Me
-            </Typography>
-            <Typography variant="body1">
-            Want to work with me? Send me a note, I would love to hear from you!
-            </Typography>
-            <Button variant="contained" size="large" color="secondary" href="/contact">
-              Contact Me
-            </Button>
-          </Grid>
         </Grid>
       </Container>
 

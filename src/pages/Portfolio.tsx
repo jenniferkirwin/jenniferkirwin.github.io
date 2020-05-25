@@ -55,7 +55,6 @@ export default function Portfolio() {
     <div className={classes.root}>
       <Banner {...bannerText}></Banner>
       <Cards></Cards>
-
     </div>
   );
 }
