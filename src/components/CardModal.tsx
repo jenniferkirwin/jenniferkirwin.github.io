@@ -15,6 +15,10 @@ import Typography from '@material-ui/core/Typography';
 import Close from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
 
+// FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+
 // interface
 
 import PortfolioProps from '../interfaces/PortfolioProps';
@@ -53,6 +57,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     responsiveImg: {
       maxWidth: '100%',
+    },
+    arrowPadding: {
+      marginLeft: '15px',
     }
   }),
 );
@@ -71,9 +78,11 @@ export default function CardModal({projectName, projectOver, projectDescr, proje
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
-      </button>
+
+      <Button variant="contained" size="large" color="secondary" onClick={handleOpen}>
+        {projectName} <FontAwesomeIcon icon={faArrowAltCircleRight} className={classes.arrowPadding}/>
+      </Button>
+
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
