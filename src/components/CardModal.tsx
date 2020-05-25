@@ -51,6 +51,9 @@ const useStyles = makeStyles((theme: Theme) =>
     btnContainer: {
       marginBottom: '25px',
     },
+    responsiveImg: {
+      maxWidth: '100%',
+    }
   }),
 );
 
@@ -111,7 +114,7 @@ export default function CardModal({projectName, projectOver, projectDescr, proje
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6} >
-
+                  <img src={imgSrc} alt={projectName} className={classes.responsiveImg}/>
                 </Grid>
               </Grid>
             </Container>
