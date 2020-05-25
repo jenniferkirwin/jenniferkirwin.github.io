@@ -16,23 +16,6 @@ import Button from '@material-ui/core/Button';
 import Banner from '../components/Banner';
 import BannerProps from '../interfaces/BannerProps';
 
-// FontAwesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faHtml5, 
-  faSass, 
-  faJs, 
-  faNodeJs, 
-  faReact, 
-  faAngular,
-  faBootstrap,
-  faAdobe 
-} from '@fortawesome/free-brands-svg-icons';
-import { 
-  faDatabase, 
-  faCheck,
-  faAd } from '@fortawesome/free-solid-svg-icons';
-
 // Begin Application
 // -------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------
