@@ -63,7 +63,7 @@ export default function Contact() {
     <div className={classes.root}>
       <Banner {...bannerText}></Banner>
       <Container>
-        <Grid container spacing={6}>
+        <Grid container spacing={3}>
           <Grid item xs={12} sm={6}>
             <Typography variant="h3">
               Developer

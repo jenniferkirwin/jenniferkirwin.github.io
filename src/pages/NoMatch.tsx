@@ -74,7 +74,7 @@ export default function NoMatch() {
               Portfolio
             </Typography>
             <Typography variant="body1">
-              A selection of website designs, GitHub Repositories, web components, UX layouts, & more that I have developed and launched.
+              A selection of website designs, GitHub Repositories, web components, UX layouts, &amp; more that I have developed and launched.
             </Typography>
             <Button variant="contained" size="large" color="secondary" href="/portfolio">
               View Portfolio
@@ -85,7 +85,7 @@ export default function NoMatch() {
               About Me
             </Typography>
             <Typography variant="body1">
-              I am a digital marketer turned web developer, living in Manchester, New Hampshire, creating and developing websites and applications with HTML, CSS, JavaScript, and more.
+              I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, JavaScript, NodeJS, and more.
             </Typography>
             <Button variant="contained" size="large" color="secondary" href="/about">
               Learn More
@@ -96,7 +96,7 @@ export default function NoMatch() {
               Contact Me
             </Typography>
             <Typography variant="body1">
-            Want to work with me? Send me a note, I would love to hear from you!
+              Want to work with me? Send me a note, I would love to hear from you!
             </Typography>
             <Button variant="contained" size="large" color="secondary" href="/contact">
               Contact Me

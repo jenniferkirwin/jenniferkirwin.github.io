@@ -1,6 +1,6 @@
 import PortfolioProps from '../interfaces/PortfolioProps';
 
-const imgPath:string = "https://jenniferkirwin.com/" 
+const imgPath:string = "https://jenniferkirwin.com/assets/images/" 
 
 const portfolio: PortfolioProps[] = [
   {

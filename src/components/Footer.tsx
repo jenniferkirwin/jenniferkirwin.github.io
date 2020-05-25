@@ -55,7 +55,7 @@ export default function Footer() {
           </Grid>
           <Grid item sm={12} md={8}>
             <Typography variant="body1" align="left">
-              I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, and JavaScript. In my spare time you can find me making embroidery art.
+              I am a marketer turned web developer, living in New Hampshire. I spend my days building projects with HTML, CSS, JavaScript, NodeJS, and more. In my spare time you can find me making embroidery art.
             </Typography>
           </Grid>
           <Grid item sm={12} md={4}>

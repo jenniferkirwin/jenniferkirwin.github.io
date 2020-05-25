@@ -13,6 +13,7 @@ import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Button from '@material-ui/core/Button';
 
 // Banner and Interface
 
@@ -66,14 +67,14 @@ const useStyles = makeStyles((theme: Theme) =>
     imgRes: {
       float: 'right',
       maxWidth: '250px',
-      margin: '0 0 25px'
+      margin: '0 0 25px 25px'
     }
   }),
 );
 
 const bannerText:BannerProps = {
   "title": "About Me",
-  "content": "I am a digital marketer turned web developer, living in Manchester, New Hampshire, creating and developing websites and applications with HTML, CSS, JavaScript, and more.",
+  "content": "I am a digital marketer turned web developer, living in Manchester, New Hampshire, creating and developing websites and applications with HTML, CSS, JavaScript, NodeJS, and more.",
   "fullScreen": false
 }
 
@@ -93,14 +94,14 @@ export default function About() {
           <Grid item xs={12}>
             <img src={jenniferKirwin} alt="Jennifer Kirwin Web Developer" className={classes.imgRes}/>
             <Typography variant="body1">
-              At the start of my career I was a self-taught front-end developer, building websites from scratch with HTML and CSS and managing AdWords and digital marketing campaigns for a marketing agency. When I moved to Boston, I landed a digital marketing job with my AdWords experience. Over the next 3 years of my marketing career, the companies I worked for underwent website redesigns and database updates. I saw what the developers were creating and said to myself, "this is good, but I could push this further". I found myself troubleshooting responsive design issues, making adjustments to HTML and CSS, and directing UX layouts. My husband and I moved back to New Hampshire recently and I realized my true passion was in web development and I decided to pursue it once again.
+              At the start of my career I was a self-taught front-end developer, building websites from scratch with HTML and CSS and managing AdWords and digital marketing campaigns for a marketing agency. When I moved to Boston, I landed a digital marketing job with my AdWords experience. Over the next 3 years of my marketing career, the companies I worked for underwent website redesigns and database updates. I found myself working alongside the developers troubleshooting responsive design issues, making adjustments to HTML and CSS, and directing UX layouts. My husband and I moved back to New Hampshire recently and I realized my true passion was in web development and I decided to pursue it once again.
             </Typography>
             <Typography variant="body1">
               To help jumpstart myself, I am taking a class through the University of New Hampshire to better understand back-end development and update my portfolio. <Link href="/portfolio" color="secondary"> Check out my latest projects here!</Link> Want to chat? <Link href="/contact" color="secondary"> Feel free to contact me at any time!</Link> Like art? <Link href="https://www.jenniferlamontagne.com/" target="_blank" rel="noopener noreferrer" color="secondary">Check out my embroideries at www.jenniferlamontagne.com.</Link>
             </Typography>
-            {/* <Button variant="contained" size="large" color="secondary" href={resume} target="_blank">
+            <Button variant="contained" size="large" color="secondary" href="https://jenniferkirwin.com/assets/pdfs/kirwin-jennifer_resume.pdf" target="_blank">
               Download Resume
-            </Button> */}
+            </Button>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h3">
