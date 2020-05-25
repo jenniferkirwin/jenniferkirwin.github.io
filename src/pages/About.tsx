@@ -13,6 +13,7 @@ import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Button from '@material-ui/core/Button';
 
 // Banner and Interface
 
@@ -66,7 +67,7 @@ const useStyles = makeStyles((theme: Theme) =>
     imgRes: {
       float: 'right',
       maxWidth: '250px',
-      margin: '0 0 25px'
+      margin: '0 0 25px 25px'
     }
   }),
 );
@@ -98,9 +99,9 @@ export default function About() {
             <Typography variant="body1">
               To help jumpstart myself, I am taking a class through the University of New Hampshire to better understand back-end development and update my portfolio. <Link href="/portfolio" color="secondary"> Check out my latest projects here!</Link> Want to chat? <Link href="/contact" color="secondary"> Feel free to contact me at any time!</Link> Like art? <Link href="https://www.jenniferlamontagne.com/" target="_blank" rel="noopener noreferrer" color="secondary">Check out my embroideries at www.jenniferlamontagne.com.</Link>
             </Typography>
-            {/* <Button variant="contained" size="large" color="secondary" href={resume} target="_blank">
+            <Button variant="contained" size="large" color="secondary" href="https://jenniferkirwin.com/assets/pdfs/kirwin-jennifer_resume.pdf" target="_blank">
               Download Resume
-            </Button> */}
+            </Button>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant="h3">
